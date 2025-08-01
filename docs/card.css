@@ -61,7 +61,7 @@ p{
   border-top: solid;
   padding: 2rem;
   border-radius: 0.2rem;
-  box-shadow: 0 7px 15px 0 hsla(210, 6%, 44%, 0.288);
+  box-shadow: 0 7px 15px 0 hsla(210, 6%, 44%, 0.267)
 }
 
 .second-div {
@@ -76,5 +76,45 @@ gap: 2rem
 
 
 
+/* mobile phone layout */
 
+@media (orientation: portrait){
+ 
+  body{
+  min-height: fit-content;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  font-style: normal;
+  padding: 4rem 0;
+}
 
+section{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4rem;
+    color: hsl(234, 12%, 34%);
+}
+h1{
+  font-size: 1.5rem;
+}
+
+.head-div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0rem;
+}
+
+.main-div{
+  display: grid;
+  grid-template-columns: 1fr ;
+  align-items: center;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+}
